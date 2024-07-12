@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
     >
       <!-- ? Home starts -->
       <section
-        class="home min-h-screen flex flex-col items-center justify-center gap-10"
+        class="home min-h-screen flex flex-col items-center justify-center gap-10 hidden"
       >
         <h1 class="text-8xl text-white font-anton">Alpha Clash Pro</h1>
 
@@ -35,7 +35,83 @@
       <!-- ? Home ends -->
 
       <!-- ? Play Ground starts -->
-      <section class="play-ground"></section>
+      <section class="play-ground">
+        <div
+          class="min-h-screen flex flex-col items-center justify-center gap-[100px]"
+        >
+          <!-- * screen -->
+          <div
+            class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313] border-opacity-80 bg-white bg-opacity-70"
+          >
+            <div class="flex justify-center -mt-[20px]">
+              <p class="bg-[#2f2941] text-white py-4 px-7 rounded-b-xl">
+                Don't watch keyboard while playing...
+              </p>
+            </div>
+
+            <div class="flex h-[calc(320px-76px)] justify-center items-center">
+              <p class="text-9xl font-bold text-black">Y</p>
+            </div>
+          </div>
+
+          <!-- * keyboard start -->
+          <div class="keyboard-container">
+            <div class="my-1 flex w-full justify-center gap-1">
+              <kbd class="kbd">q</kbd>
+              <kbd class="kbd">w</kbd>
+              <kbd class="kbd">e</kbd>
+              <kbd class="kbd">r</kbd>
+              <kbd class="kbd">t</kbd>
+              <kbd class="kbd">y</kbd>
+              <kbd class="kbd">u</kbd>
+              <kbd class="kbd">i</kbd>
+              <kbd class="kbd">o</kbd>
+              <kbd class="kbd">p</kbd>
+            </div>
+            <div class="my-1 flex w-full justify-center gap-1">
+              <kbd class="kbd">a</kbd>
+              <kbd class="kbd">s</kbd>
+              <kbd class="kbd">d</kbd>
+              <kbd class="kbd">f</kbd>
+              <kbd class="kbd">g</kbd>
+              <kbd class="kbd">h</kbd>
+              <kbd class="kbd">j</kbd>
+              <kbd class="kbd">k</kbd>
+              <kbd class="kbd">l</kbd>
+            </div>
+            <div class="my-1 flex w-full justify-center gap-1">
+              <kbd class="kbd">z</kbd>
+              <kbd class="kbd">x</kbd>
+              <kbd class="kbd">c</kbd>
+              <kbd class="kbd">v</kbd>
+              <kbd class="kbd">b</kbd>
+              <kbd class="kbd">n</kbd>
+              <kbd class="kbd">m</kbd>
+              <kbd class="kbd">/</kbd>
+            </div>
+          </div>
+          <!-- * keyboard end -->
+
+          <!-- * life and score -->
+          <div class="w-2/4 flex justify-between">
+            <button
+              class="btn rounded-full bg-[#894189] border-none text-white px-8"
+            >
+              Life
+              <img src="./images/heart.svg" alt="" />
+              <span>1</span>
+            </button>
+
+            <button
+              class="btn rounded-full bg-[#360490] border-none text-white px-8"
+            >
+              Score
+              <img src="./images/monetization_on.svg" alt="" />
+              <span>1</span>
+            </button>
+          </div>
+        </div>
+      </section>
       <!-- ? Play Ground ends -->
 
       <!-- ? Score section starts -->
